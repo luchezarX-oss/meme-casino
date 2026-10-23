@@ -1,0 +1,268 @@
+body {
+  width: 320px;
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  background: #0A0A0A;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#game-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#top-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#wallet {
+  flex: 1;
+  background: #222222;
+  padding: 12px 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.2s;
+}
+
+#wallet:hover {
+  background: #333333;
+}
+
+#wallet span {
+  font-size: 24px;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+#get-coin {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  font-size: 24px;
+  background: #FFDD2D;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000;
+}
+
+#get-coin:disabled {
+  background: #333;
+  color: #888;
+  cursor: not-allowed;
+}
+
+#slots {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: #161616;
+  padding: 12px;
+  border-radius: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slot {
+  font-size: 32px;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #FFDD2D;
+}
+
+#spin {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background: #FFDD2D;
+  color: #000;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+  margin-bottom: 10px;
+}
+
+#spin:active {
+  background: #E5C523;
+}
+
+#reset {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: transparent;
+  color: #ff4444;
+  border: 1px solid #ff4444;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+#reset:hover {
+  background: rgba(255, 68, 68, 0.1);
+}
+
+#bank-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+#back {
+  background: none;
+  border: none;
+  color: #007AFF;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.amount-display {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quick-btns {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.quick {
+  background: #1C1C1E;
+  color: #FFDD2D;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quick:active {
+  background: #2C2C2E;
+}
+
+.transfer-box {
+  background: #1C1C1E;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #2C2C2E;
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card-title {
+  font-size: 11px;
+  color: #8E8E93;
+}
+
+.card-amount {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.swap-btn {
+  background: #FFDD2D;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.num-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.num {
+  background: #1C1C1E;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.num:active {
+  background: #3A3A3C;
+}
+
+#transfer {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #FFDD2D;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#transfer:active {
+  background: #E5C523;
+}

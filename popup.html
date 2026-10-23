@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Meme Casino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-view">
+    <div id="top-bar">
+      <div id="wallet">
+        <span>💳 <span id="score">1500</span> ₽</span>
+      </div>
+      <button id="get-coin">🪙</button>
+    </div>
+    
+    <div id="slots">
+      <div class="slot" id="s1">🍒</div>
+      <div class="slot" id="s2">🍋</div>
+      <div class="slot" id="s3">7️⃣</div>
+      <div class="slot" id="s4">🔔</div>
+      <div class="slot" id="s5">🍇</div>
+    </div>
+
+    <button id="spin">Крутить (-100)</button>
+    <button id="reset">Сбросить прогресс</button>
+  </div>
+
+  <div id="bank-view" class="hidden">
+    <div class="header">
+      <button id="back">←</button>
+    </div>
+    
+    <div class="amount-display">
+      <span id="input-amount">0</span> ₽
+    </div>
+
+    <div class="quick-btns">
+      <button class="quick" data-add="100">+100</button>
+      <button class="quick" data-add="500">+500</button>
+      <button class="quick" id="quick-max">Все</button>
+    </div>
+
+    <div class="transfer-box">
+      <div class="card">
+        <div class="card-title">💳 Т-Банк</div>
+        <div class="card-amount"><span id="bank-bal">100</span> ₽</div>
+      </div>
+      
+      <button class="swap-btn" id="swap">↓</button>
+      
+      <div class="card">
+        <div class="card-title">🎰 Meme Casino</div>
+        <div class="card-amount"><span id="casino-bal">1500</span> ₽</div>
+      </div>
+    </div>
+
+    <div class="num-pad">
+      <button class="num" data-val="1">1</button>
+      <button class="num" data-val="2">2</button>
+      <button class="num" data-val="3">3</button>
+      <button class="num" data-val="4">4</button>
+      <button class="num" data-val="5">5</button>
+      <button class="num" data-val="6">6</button>
+      <button class="num" data-val="7">7</button>
+      <button class="num" data-val="8">8</button>
+      <button class="num" data-val="9">9</button>
+      <button class="num" data-val="0">0</button>
+      <button class="num" data-val="00">00</button>
+      <button class="num" id="clear">C</button>
+    </div>
+
+    <button id="transfer">Перевести</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

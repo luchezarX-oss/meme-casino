@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Meme Casino",
+  "version": "1.0",
+  "description": "Мемное мини-казино со слотами",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Meme Casino"
+  }
+}
